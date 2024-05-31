@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lottie Embeding</title>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <script>
+      LottieInteractivity.create({
+        player: "#lottie-2",
+        mode: "cursor",
+        actions: [
+          {
+            type: "click",
+            forceFlag: false,
+          },
+        ],
+      });
+    </script>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+          tenetur.
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
+          dolore voluptatem voluptates nemo. Magnam, praesentium blanditiis
+          tenetur distinctio deserunt quia nostrum eius, veniam dolorem beatae
+          illum non quis quasi. Porro provident error quo, eligendi quia
+          reiciendis, enim unde ad nostrum, consequatur voluptas. Tenetur
+          nostrum sed, eveniet maiores ipsa voluptatem! Pariatur!
+        </p>
+        <dotlottie-player
+          id="lottie-1"
+          class="lottie"
+          src="assets/lottie-downloded.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></dotlottie-player>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          eos harum quia unde vitae, consequatur accusamus nobis odio provident
+          reiciendis?
+        </p>
+        <dotlottie-player
+          id="lottie-2"
+          class="lottie"
+          src="https://lottie.host/1b3ff42b-3039-419b-975e-c1c57c84eab3/96q2cHkBxX.json"
+          background="transparent"
+          speed="1"
+        ></dotlottie-player>
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+
+        <lottie-player
+          id="lottie-2"
+          class="lottie"
+          src="https://lottie.host/3c574440-7d73-4996-8fc6-eb7a5b3ca468/QPloBbcIm0.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+  </body>
+</html>
